@@ -19,4 +19,4 @@ Steps (assumes you have Docker already installed)
 
 Run your container and you should now be able to reach the iperf3 server from an iperf3 client.
 
-This setup is known to work on DSM 6.1.
+This setup is known to work on DSM 6.1. I have include an export file of the iperf3 Docker settings, Docker_config.json. You may be able to import this file to your NAS to automate the setup.
