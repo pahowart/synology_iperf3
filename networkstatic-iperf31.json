@@ -1,0 +1,50 @@
+{
+   "cap_add" : null,
+   "cap_drop" : null,
+   "cmd" : "networkstatic/iperf3 -s",
+   "cpu_priority" : 90,
+   "devices" : null,
+   "enable_publish_all_ports" : false,
+   "enable_restart_policy" : true,
+   "enabled" : false,
+   "entrypoint_default" : "iperf3",
+   "env_variables" : [
+      {
+         "key" : "PATH",
+         "value" : "/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+      }
+   ],
+   "exporting" : false,
+   "id" : "9bc04f504bc395cf866efb469a97b0670e770956b5b47cd6626fac5741e65330",
+   "image" : "networkstatic/iperf3:latest",
+   "is_ddsm" : false,
+   "is_package" : false,
+   "links" : [],
+   "memory_limit" : 4294967296,
+   "name" : "networkstatic-iperf31",
+   "network" : [
+      {
+         "driver" : "bridge",
+         "name" : "bridge"
+      }
+   ],
+   "network_mode" : "bridge",
+   "port_bindings" : [
+      {
+         "container_port" : 5201,
+         "host_port" : 5201,
+         "type" : "tcp"
+      },
+      {
+         "container_port" : 5201,
+         "host_port" : 5201,
+         "type" : "udp"
+      }
+   ],
+   "privileged" : false,
+   "shortcut" : {
+      "enable_shortcut" : false
+   },
+   "use_host_network" : false,
+   "volume_bindings" : []
+}
